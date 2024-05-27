@@ -12,7 +12,7 @@ export default withMT({
   theme: {
     extend: {
       backgroundImage: {
-        home: "url('./src/assets/shopping-bag-cart.jpg')",
+        home: "url(./src/assets/shopping-bag-cart.jpg)",
       },
     },
   },
