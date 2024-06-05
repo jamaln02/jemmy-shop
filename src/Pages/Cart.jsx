@@ -9,19 +9,21 @@ const Carts = ({ carts, increment, decrement, deletProduct }) => {
     return (
       <div>
         <div className="bg-gray-100 h-fit py-5">
-          <div className="container mx-16 px-1">
-            <h1 className="text-2xl font-semibold mb-4">Shopping Cart</h1>
-            <div className="flex flex-col md:flex-row gap-3">
+          <div className="container mx-auto ">
+            <h1 className="text-xl lg:text-2xl font-semibold mb-4">
+              Shopping Cart
+            </h1>
+            <div className="flex flex-col lg:flex-row gap-3 px-5">
               <div>
                 {" "}
                 {carts.map((ele, ind) => (
-                  <div key={ind} className="md:w-full">
-                    <div className="bg-white rounded-lg shadow-md p-6 mb-4">
-                      <table className="w-full">
+                  <div key={ind} className="lg:w-full ">
+                    <div className="bg-white rounded-lg shadow-lg p-3 lg:p-6 mb-2 lg:mb-4 overflow-x-scroll">
+                      <table className="w-full ">
                         <thead>
                           <tr>
                             <th className="text-left font-semibold">Product</th>
-                            <th className="text-left font-semibold px-5">
+                            <th className="text-left font-semibold px-3 lg:px-5">
                               Price
                             </th>
                             <th className="text-left font-semibold">
@@ -33,18 +35,18 @@ const Carts = ({ carts, increment, decrement, deletProduct }) => {
                         <tbody>
                           <tr>
                             <td className="py-4">
-                              <div className="flex items-center">
+                              <div className="flex items-center mx-1">
                                 <img
                                   className="h-16 w-16 mr-4"
                                   src={ele.image}
                                   alt="Product image"
                                 />
-                                <span className="font-semibold ">
+                                <span className="font-semibold !text-sm me-14">
                                   {ele.title}
                                 </span>
                               </div>
                             </td>
-                            <td className="py-4 px-5 font-bold text-orange-400">
+                            <td className="py-4 px-5 font-bold text-orange-400 ">
                               ${ele.price}
                             </td>
                             <td className="py-4">
@@ -82,7 +84,7 @@ const Carts = ({ carts, increment, decrement, deletProduct }) => {
                   </div>
                 ))}
               </div>
-              <div className="md:w-72">
+              <div className=" md:w-72">
                 <div className="bg-white rounded-lg shadow-md p-5">
                   <h2 className="text-lg font-semibold mb-4">Summary</h2>
                   <div className="flex justify-between mb-2">

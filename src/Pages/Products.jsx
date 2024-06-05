@@ -11,7 +11,7 @@ import React from "react";
 
 const Products = ({ product, addToCart }) => {
   return (
-    <Card className="w-[20rem] h-[30rem]">
+    <Card className="w-[17rem] h-[25rem] md:w-[20rem] md:h-[30rem]">
       <CardHeader shadow={false} floated={false} className="h-full">
         <img
           src={product.image}
@@ -28,8 +28,11 @@ const Products = ({ product, addToCart }) => {
           >
             {product.title}
           </Typography>
-          <Typography color="orange" variant="h6" className=" font-bold">
-            {product.price} $
+          <Typography
+            variant="h6"
+            className=" font-bold text-nowrap text-orange-700"
+          >
+            {product.price}$
           </Typography>
         </div>
         <Typography

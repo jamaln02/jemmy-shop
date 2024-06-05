@@ -8,7 +8,7 @@ const Home = () => {
       style={{ backgroundImage: `url(${shopping})` }}
       className="flex flex-col justify-between items-start w-full h-[32rem]  bg-cover bg-right"
     >
-      <h1 className=" text-6xl font-semibold mx-5 my-4 capitalize text-blue-gray-900">
+      <h1 className="text-3xl md:text-6xl font-semibold mx-5 my-4 capitalize text-blue-gray-900">
         welcome to our shop
       </h1>
       <Link to="/Products">

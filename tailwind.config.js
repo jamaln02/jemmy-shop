@@ -15,6 +15,11 @@ export default withMT({
         home: "url(./src/assets/shopping-bag-cart.jpg)",
       },
     },
+    screens: {
+      sm: "480px",
+      md: "650px",
+      lg: "992px",
+    },
   },
   plugins: [],
 });
