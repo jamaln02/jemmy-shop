@@ -1,10 +1,13 @@
 import { Button } from "@material-tailwind/react";
 import React from "react";
 import { Link } from "react-router-dom";
-
+import shopping from "../assets/shopping-bag-cart.jpg";
 const Home = () => {
   return (
-    <div className="flex flex-col justify-between items-start w-full h-[32rem] bg-home bg-cover bg-right">
+    <div
+      style={{ backgroundImage: `url(${shopping})` }}
+      className="flex flex-col justify-between items-start w-full h-[32rem]  bg-cover bg-right"
+    >
       <h1 className=" text-6xl font-semibold mx-5 my-4 capitalize text-blue-gray-900">
         welcome to our shop
       </h1>
